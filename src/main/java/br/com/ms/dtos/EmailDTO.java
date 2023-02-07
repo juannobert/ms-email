@@ -16,14 +16,14 @@ public class EmailDTO {
 	private String ownerRef;
 	
 	@NotBlank
-	private String emailForm;
+	@Email
+	private String emailFrom;
 	
 	@NotBlank
 	@Email
 	private String emailTo;
 	
 	@NotBlank
-	@Email
 	private String subject;
 	
 	@NotBlank
